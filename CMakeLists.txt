@@ -6,18 +6,13 @@ catkin_package()
 
 set(ROS_VERSION "1")
 
-# allow overriding the Python version
-if(DEFINED ENV{ROS_PYTHON_VERSION})
-  set(ROS_PYTHON_VERSION "$ENV{ROS_PYTHON_VERSION}")
-else()
-  set(ROS_PYTHON_VERSION "3")
-endif()
+set(ROS_PYTHON_VERSION "3")
 
 # allow overriding the distro name
 if(DEFINED ENV{ROS_DISTRO_OVERRIDE})
   set(ROS_DISTRO $ENV{ROS_DISTRO_OVERRIDE})
 else()
-  set(ROS_DISTRO "noetic")
+  set(ROS_DISTRO "obese")
 endif()
 
 set(
