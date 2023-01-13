@@ -8,5 +8,12 @@
   <url type="repository">https://github.com/ros/ros_environment</url>
   <url type="bugtracker">https://github.com/ros/ros_environment/issues</url>
 
+  <!--
+  Add a helper package that provides the workspace setup and
+  catkin_tools_prebuild package when packages are built without catkin
+  https://github.com/v4hn/setup_files
+  -->
+  <run_depend>setup_files</run_depend>
+
   <buildtool_depend>catkin</buildtool_depend>
 </package>
